@@ -1,0 +1,19 @@
+# Python environment files
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Datasets & Large Data
+data/
+datasets/
+*.mp4
+*.jpg
+*.png
+
+# Machine Learning Models
+*.pt
+*.pth
+*.h5
+*.onnx
+weights/
