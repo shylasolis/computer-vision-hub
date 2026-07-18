@@ -25,10 +25,11 @@ code .
 ```
 
 ### 4. Install the Required Core Libraries
-Run this command inside your VS Code terminal to install the exact toolsets needed for both classical vision and deep learning:
+Run this single command inside your VS Code terminal to install all required packages automatically from our snapshot configuration file:
 ```bash
-pip install opencv-python numpy torch torchvision
+pip install -r requirements.txt
 ```
+
 
 ---
 
@@ -67,6 +68,25 @@ pip install opencv-python numpy torch torchvision
   ```bash
   python 03_pytorch_verification.py
   ```
+
+---
+
+## 📊 Understanding Your PyTorch Environment Results
+
+When you run `03_pytorch_verification.py`, you are auditing your computer's machine learning capabilities. Here is how to interpret your terminal output:
+
+### 1. The PyTorch Version Tag
+If your version ends in `+cpu`, your environment is configured to run matrix math on your computer's main processor (CPU). This is perfect for learning! If it lists a CUDA version, you are connected to a high-speed graphics card.
+
+### 2. GPU Acceleration: True vs. False
+* **True:** Your machine has an active NVIDIA graphics card configured with CUDA drivers. This mimics Tesla's supercomputing server architecture for rapid deep learning training.
+* **False:** Your machine is running calculations on the CPU. Do not panic! A CPU handles foundational matrix operations flawlessly for educational projects.
+
+### 3. What is a "Tensor" Matrix?
+At the bottom of your script output, you will see a grid of numbers labeled `tensor([[...]])`. 
+* A **Tensor** is a multi-dimensional array of numbers utilized by PyTorch.
+* The grid you see is the result of a **Matrix Multiplication** calculation.
+* This exact mathematical process is the absolute core calculation behind how deep learning neural networks process camera pixels to detect objects in real time.
 
 ---
 

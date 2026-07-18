@@ -7,8 +7,8 @@ def main():
     img = np.zeros((400, 600, 3), dtype=np.uint8)
     
     # Draw a simulated gray asphalt highway trapezoid
-    road_points = np.array([[100, 400], [250, 200], [350, 200], [500, 400]], dtype=np.int32)
-    cv2.fillPoly(img, [road_points], (50, 50, 50))
+    road_points = np.array([[100, 400], [250, 200], [350, 200], [500, 400]], dtype=np.int32) 
+    cv2.fillPoly(img, [road_points], (50, 50, 50)) # (50, 50, 50) represent a specific shade of dark gray using the BGR (Blue, Green, Red) color system.
     
     # Draw a simulated solid white lane marker on the left
     cv2.line(img, (150, 360), (260, 210), (255, 255, 255), 5)
