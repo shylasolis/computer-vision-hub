@@ -69,7 +69,6 @@ pip install -r requirements.txt
   python 03_pytorch_verification.py
   ```
 
----
 
 ## 📊 Understanding Your PyTorch Environment Results
 
